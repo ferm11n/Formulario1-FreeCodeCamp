@@ -1,0 +1,159 @@
+<!DOCTYPE html><link rel="stylesheet" href="styles.css">
+<html lang="es">
+   <head>
+    <meta charset="UTC-3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <h1><title id="title">Formulario de Programacion</title></h1>
+      <link rel="stylesheet" href="C:\Users\lucas\Desktop\Projectos\misHTML\styles1">
+   </head>
+   <body>
+      <header id="header" class="borde">
+         <h1>Conocimientos en programacion</h1>
+         <h3>Formulario de encuestas</h3>
+      </header>
+      <main id="container" class="borde">
+        <article class="borde" id="art-description">
+         <h2>Ingrese sus datos correspondientes:</h2>
+         <p id="description">El siguientes formulario esta diseñado para medir tu nivel de conocimiento en el area de: <br>PROGRAMACION</p>
+        </article>
+        <form id="survey-form" action="survey-form" class="borde">
+            <section id="sec-name">
+                <article class="article-label">
+                    <label id="name-label" for="name">Nombre: <small>*obligatorio </small></label>
+                </article>
+                <article class="article-name">
+                    <input id="name" type="text" required placeholder="Ingrese su nombre"></input>
+                </article>
+            </section>
+            <section id="sec-email">
+                <article class="article-label">
+                    <label id="email-label" for="email">Email: <small>*obligatorio</small></label>
+                </article>
+                <article>
+                    <input id="email" type="email" inputmode="email" required placeholder="Ingrese su Email"></input>
+                </article>
+            </section>
+            <section id="sec-number">
+                <article class="article-label">
+                    <label id="number-label" for="number">Edad: <small>*obligatorio</small></label>
+                </article>
+                <article>
+                    <input id="number" type="number" min="10" max="100" required placeholder="Ingrese su edad"></input>
+                </article>
+            </section>
+            <section id="sec-number-tel">
+                <article class="article-label">
+                    <label id="number-tel-labeñ" for="number-tel">Whatsapp: <small>(Opcional)</small></label>
+                </article>
+                <article>
+                    <input id="number-tel" placeholder="(Codigo de area) Numero" type="tel"></input>
+                </article>
+            </section>
+            <section id="sec-rol">
+                <article class="article-label">
+                    <p>¿Que opcion describe mejor su rol actual?</p>
+                </article>
+                <article class="article-label">
+                    <select id="dropdown" name="rol" required>
+                        <option disable selected value="selecione-su-rol">Seleccione su rol</option>
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Empleado">Empleado</option>
+                        <option value="Desempleado">Desempleado</option>
+                        <option value="Peronista">Peronista</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </article>
+            </section>
+            <section id="sec-defina">
+                <article class="article-label">
+                    <p>Defina Programacion</p>
+                </article>
+                <article>
+                <input id="input-respuesta" type="text" required placeholder="Ingrese su respuesta"></input>
+                </article>
+            </section>
+        <section id="sec-rama">
+            <article class="article-label">
+                <p>¿Que rama de la programacion le gusta mas?</p>
+            </article>
+            <article id="lista-rama" class="article-label">
+                <ul>
+                    <li><label for="Programacion Web"><input id="Programacion Web" value="Programacion Web" type="radio"
+                    name="rama">Programacion Web</label></li>
+                    <li><label for="Front-End"><input id="Front-End" value="Front-End" type="radio"
+                        name="rama">Front-End</label></li>
+                    <li><label for="Back-End"><input id="Back-End" value="Back-End" type="radio"
+                            name="rama">Back-End</label></li>
+                    <li><label for="Machine Learning"><input id="Machine Learning" value="Machine Learning" type="radio"
+                                name="rama">Machine Learning</label></li>
+                    <li><label for="Programacion Mobile"><input id="Programacion Mobile" value="Programacion Mobile" type="radio"
+                                    name="rama">Programacion Mobile</label></li>
+                    <li><label for="Programacion Embedded"><input id="Programacion Embedded" value="Programacion Embedded" type="radio"
+                                        name="rama">Programacion Embedded</label></li>
+                    <li><label for="Programacion Desktop"><input id="Programacion Desktop" value="Programacion Desktop" type="radio"
+                                            name="rama">Programacion Desktop</label></li>
+                    <li><label for="Programacion de OS"><input id="Programacion de OS" value="Programacion de OS" type="radio"
+                                                name="rama">Programacion de OS</label></li>
+                    <li><label for="Programacion de videojuegos"><input id="Programacion de videojuegos" value="Programacion de videojuegos" type="radio"
+                                                    name="rama">Programacion de videojuegos</label></li>
+                </ul>
+            </article>
+        </section>
+        <section id="sec-definicon">
+            <article class="article-label">
+                <p>¿Cual es la definicion correcta de Programacion Front-End</p>
+            </article>
+            <article class="article-label">
+                <select name="definicion" id="definicion-desplegable" required>
+                    <option disabled selected value="seleccione-su-rol">Seleccione la respuesta correcta</option>
+                    <option value="Machine Learning">1) Se trata de experimentar, cómo una máquina o robot, adquiere una inteligencia que le permite desarrollar experiencia para realizar tareas concretas.</option>
+                    <option value="Front-End">2) El usuario podrá interactuar dentro de la aplicación o sitio, para así poder realizar una tarea concreta. </option>
+                    <option value="Programacion de OS">3) Se trata del desarrollo propiamente dicho de los Sistemas Operativos, o bien, del mantenimiento de los mismos cuando estos puedan presentar fallos.</option>
+                </select>
+            </article>
+        </section>
+        <section id="sec-elementos">
+            <article class="article-label">
+                <p>¿Cuales son los 5 elementos de la programacion?</p>
+            </article>
+            <article id="lista-elementos">
+                <ul>
+                    <li><label for="Palabras Reservadas"><input id="Palabras Reservadas" value="Palabras Reservadas" type="checkbox"
+                                name="elemento">Palabras Reservadas</label></li>
+                    <li><label for="Operadores"><input id="Operadores" value="Operadores" type="checkbox"
+                                name="elemento">Operadores</label></li>
+                    <li><label for="Sistemas Operativos"><input id="Sistemas Operativos" value="Sistemas Operativos" type="checkbox"
+                                name="elemento">Sistemas Operativos</label></li>
+                    <li><label for="Constantes"><input id="Constantes" value="Constantes" type="checkbox"
+                                name="elemento">Constantes</label></li>
+                    <li><label for="Identificadores"><input id="Identificadores" value="Identificadores" type="checkbox"
+                                name="elemento">Identificadores</label></li>
+                    <li><label for="Computadoras"><input id="Computadoras" value="Computadoras" type="checkbox"
+                                name="elemento">Computadoras</label></li>
+                    <li><label for="Teclados"><input id="Teclados" value="Teclados" type="checkbox"
+                                name="elemento">Teclados</label></li>
+                    <li><label for="Variables"><input id="Variables" value="Variables" type="checkbox"
+                                name="elemento">Variables</label></li>
+                </ul>
+            </article>
+        </section>
+        <section id="sec-comentario">
+            <article class="article-label">
+                <p>¿Algún comentario o sugerencia?</p>
+            </article>
+            <article class="article-comentario">
+                <textarea name="comentarios" id="comentarios" placeholder="Ingrese sus comentarios o sugerencias"
+                    cols="100" rows="10"></textarea>
+            </article>
+        </section>
+        <section id="sec-submit">
+            <button id="submit" type="submit"><strong>Enviar</strong></button>
+        </section>
+    </form>
+        </form>
+      </main>
+      <footer>
+      </footer>
+   </body>
+
+</html>
